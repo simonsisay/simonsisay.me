@@ -7,13 +7,13 @@ const ComingSoon = () => {
     <Container>
       <div className="content">
         <div className="description">
-          <h1>Coming Soon 🚧</h1>
+          <h1>Coming soon 🚧</h1>
           <p>
             Thank you for taking interest in checking out my website.
-            Unfortunately, the site is currently is development mode. You can
+            Unfortunately, the site is currently in development mode. You can
             say hello on <a href="https://twitter.com/sisay_simon">twitter</a>{" "}
             or follow me on <a href="https://github.com/simonsisay">github</a>{" "}
-            to learn more about me.
+            to learn about me.
           </p>
         </div>
       </div>
