@@ -10,10 +10,16 @@ export const GlobalStyle = createGlobalStyle`
 
     }
     body{
-
         margin:0px;
          padding:0px;
       overflow: hidden !important;
 
     }
+
+    #particles canvas{
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    z-index: -1;
+}
 `;

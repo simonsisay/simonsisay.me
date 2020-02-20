@@ -73,8 +73,13 @@ export const Container = styled.div`
         }
       }
     }
+  }
 
-    @media (max-width: 950px) {
+  @media (max-width: 950px) {
+    .notification {
+      right: 12vw;
+    }
+    .content {
       justify-content: center;
       align-items: center;
       overflow: hidden;

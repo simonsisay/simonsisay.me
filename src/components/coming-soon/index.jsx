@@ -16,7 +16,20 @@ const ComingSoon = () => {
         <NotificationFlag />
       </div>
       <div className="particles-container">
-        <Particles />
+        <Particles
+          style={{ width: "100%", height: "100%" }}
+          params={{
+            particles: {
+              line_linked: {
+                shadow: {
+                  enable: true,
+                  color: "#7abdd6",
+                  blur: 1
+                }
+              }
+            }
+          }}
+        />
       </div>
       <div className="logo-container">
         <Logo />
