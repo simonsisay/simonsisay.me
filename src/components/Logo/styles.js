@@ -7,4 +7,8 @@ export const LogoHeader = styled.p`
   font-size: 4.5em;
   font-family: "Dancing Script", cursive;
   text-shadow: 2px 2px 2px lightgrey;
+
+  @media (max-width: 550px) {
+    font-size: 3.5em;
+  }
 `;
