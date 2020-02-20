@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <div>{children}</div>
+      <>{children}</>
     </ThemeProvider>
   );
 };

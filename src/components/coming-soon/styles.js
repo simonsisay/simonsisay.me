@@ -2,61 +2,91 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 100vh;
-  padding: 50px;
-  background: #000;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .notification {
+    position: absolute;
+    bottom: 14px;
+    right: 1px;
+  }
+
+  .particles-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .logo-container {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+  }
 
   .content {
-    width: 100%;
-    height: 100%;
-    margin-top: -70px;
+    width: 100vw;
+    height: 90%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    position: relative;
 
     h1 {
-      font-family: "PT Sans Caption", sans-serif;
-      font-weight: 800;
-      font-size: 4em;
-      color: #fff;
+      font-family: "AvenirLTPro-Heavy";
+      font-weight: 900;
+      font-size: 7em;
+      color: #f2efef;
       margin: 0px;
       padding: 0px;
+      text-shadow: 4px 4px 12px #252525;
+      text-transform: uppercase;
     }
 
-    p {
-      font-family: "PT Sans Caption", sans-serif;
-      padding-left: 8px;
-      font-size: 20px;
-      font-weight: lighter;
-      color: #bfc9c6;
-      max-width: 600px;
-      line-height: 30px;
-
-      a {
-        color: #3ebcbc;
-      }
+    h3 {
+      color: #707070;
+      text-align: center;
+      font-size: 2.8em;
+      margin: 0px;
+      font-family: "Poiret One", cursive;
+      letter-spacing: 2px;
     }
 
-    .contact {
+    .links {
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-wrap: wrap;
-      img {
-        width: 400px;
-        height: 260px;
+      justify-content: center;
+      margin-top: 10px;
+
+      .icon {
+        font-size: 40px;
+        color: #707070;
+        margin-right: 30px;
+        cursor: pointer;
+
+        &:hover {
+          color: #fff;
+        }
       }
     }
 
-    @media (max-width: 713px) {
+    @media (max-width: 950px) {
       justify-content: center;
       align-items: center;
+      overflow: hidden;
 
       h1 {
-        font-size: 3em;
+        font-size: 5em;
+        text-align: center;
       }
 
-      p {
-        max-width: 300px;
+      h3 {
+        width: 100%;
+        font-size: 1.6em;
       }
     }
   }
