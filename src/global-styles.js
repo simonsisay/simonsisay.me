@@ -18,8 +18,8 @@ export const GlobalStyle = createGlobalStyle`
 
     #particles canvas{
     position: absolute;
-    width: 100vh;
-    height: 100vh;
+    width: 100vh !important;
+    height: 100vh !important;
     z-index: -1;
 }
 `;

@@ -8,8 +8,13 @@ import {
   TiSocialLinkedin
 } from "react-icons/ti";
 import NotificationFlag from "../NotificationFlag";
+import { useMediaQuery } from "react-responsive";
 
 const ComingSoon = () => {
+  const isMobileView = useMediaQuery({
+    query: "(max-device-width: 950px)"
+  });
+
   return (
     <Container>
       <div className="notification">
@@ -20,7 +25,24 @@ const ComingSoon = () => {
           style={{ width: "100%", height: "100%" }}
           params={{
             particles: {
+              number: {
+                value: isMobileView ? 80 : 30,
+                density: {
+                  enable: isMobileView ? true : false,
+                  value_area: 1000
+                }
+              },
+              shape: {
+                type: "circle",
+                stroke: { width: 0, color: "#000000" },
+                polygon: { nb_sides: 3 }
+              },
               line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#ffffff",
+                opacity: 0.4,
+                width: 1,
                 shadow: {
                   enable: true,
                   color: "#7abdd6",
